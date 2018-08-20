@@ -36,12 +36,12 @@ def turn(board)
 end
 
 # Define your play method below
-turn=turn(board)
-turn=0
+turn=valid_move?(board, index)
+turn=9
 
 def play(board)
-  while turn<10
-    turn+=1
+  while turn>0
+    turn-=1
     turn(board)
  end
 end
