@@ -36,9 +36,6 @@ def turn(board)
 end
 
 # Define your play method below
-turn=valid_move?(board, index)
-turn=9
-
 def play(board)
   turn=0
   while turn<9
