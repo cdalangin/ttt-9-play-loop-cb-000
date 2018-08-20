@@ -40,8 +40,9 @@ turn=valid_move?(board, index)
 turn=9
 
 def play(board)
-  while turn>0
-    turn-=1
+  turn=0
+  while turn<9
+    turn+=1
     turn(board)
  end
 end
